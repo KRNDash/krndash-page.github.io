@@ -1,48 +1,48 @@
 @font-face {
     font-family: 'Futura PT', 'Light';
-    src: url('FuturaPT-Light.woff') format('woff');
+    src: url('FuturaPT-Light.otf') format('otf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Bold';
-    src: url('FuturaPT-Bold.woff') format('woff');
+    src: url('FuturaPT-Bold.otf') format('otf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'ExtraBold';
-    src: url('FuturaPT-ExtraBold.woff') format('woff');
+    src: url('FuturaPT-ExtraBold.otf') format('otf');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Demi';
-    src: url('FuturaPT-Demi.woff') format('woff');
+    src: url('FuturaPT-Demi.otf') format('otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Heavy';
-    src: url('FuturaPT-Heavy.woff') format('woff');
+    src: url('FuturaPT-Heavy.otf') format('otf');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Medium';
-    src: url('FuturaPT-Medium.woff') format('woff');
+    src: url('FuturaPT-Medium.otf') format('otf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Book';
-    src: url('FuturaPT-Book.woff') format('woff');
+    src: url('FuturaPT-Book.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
