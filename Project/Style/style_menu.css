@@ -306,3 +306,27 @@ a {
         margin-right: 15px;
     }
 }
+@media screen and (max-width: 320px) {
+    .footer-wrapper {
+        width: 100%;
+    }
+    .footer-wrapper {
+        display: block;
+    }
+    .footer-block {
+        justify-content: center;
+    }
+    .logo_img {
+        display: none;
+    }
+    .logo_text {
+        font-size: 18pt;
+        text-align: center;
+    }
+    .mail_img {
+        display: none;
+    }
+    .email {
+        font-size: 15pt;
+    }
+}

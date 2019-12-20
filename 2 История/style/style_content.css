@@ -299,3 +299,27 @@ sup {
     }
 
 }
+@media screen and (max-width: 320px) {
+    .main-wrapper{
+        width: 80%;
+    }
+    h1 {
+        font-size: 30pt;
+    }
+    .header_content {
+        padding-left: 15px;
+    }
+    .header-image {
+        padding-left: 0;
+    }
+    .main-wrapper {
+        padding-left: 20px;
+    }
+    .main-text-button {
+        text-align: center;
+    }
+    .text-share-block {
+        margin-top: 35px;
+    }
+
+}

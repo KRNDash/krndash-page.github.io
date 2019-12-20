@@ -77,9 +77,9 @@
 
 }
 .b-logo-text {
-    font-family: 'Futura PT', 'Heavy';
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    font-weight: 650;
+    font-weight: 700;
     font-size: 25pt;
     color: #ececed;
 }
@@ -87,7 +87,8 @@
 .burger-menu__link {
     position: relative;
     padding: 30px 20px;
-    font-family: 'Futura PT', 'Book';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     color: #ececed;
@@ -118,6 +119,14 @@
 @media screen and (max-width: 480px) {
     .burger-menu__link {
         padding: 20px 20px;
+    }
+    .b-logo-text {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .burger-menu__link {
+        padding: 15px 20px;
     }
     .b-logo-text {
         padding-top: 0;
