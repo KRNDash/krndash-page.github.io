@@ -25,9 +25,8 @@ body{
 }
 h1 {
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Futura PT', 'Heavy'; */
     font-size: 45pt;
-    font-weight: 650;
+    font-weight: 900;
     color: #4968ec;
     margin: 0;
     padding-top: 15px;
@@ -36,27 +35,26 @@ h1 {
 h2 {
     margin: 0;
     padding-top: 55px;
-    font-family: 'Futura PT', 'Demi';
+    font-family: 'Roboto', sans-serif;
     font-size: 28pt;
-    font-weight: 600;
+    font-weight: 700;
     color: #082541;
 }
 h3 {
-    font-family: 'Futura PT', 'Medium';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #082541;
     margin: 0;
     padding-top: 20px;
     font-size: 23px;
-    line-height: 17pt;
 }
 p {
-    font-family: 'Futura PT', 'Book';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: #082541;
     margin: 0;
     padding-top: 20px;
     font-size: 19px;
-    line-height: 17pt;
 }
 .header-title-text{
     padding-left: 60px;
@@ -69,7 +67,8 @@ p {
     padding-left: 50px;
 }
 .image-text {
-    font-family: 'Futura PT', 'Light';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: #4968ec;
     font-size: 15px;
     margin: 0;
@@ -84,6 +83,7 @@ p {
     width: 1280px;
     margin: 0 auto;
     padding-left: 60px;
+    padding-right: 20px;
 }
 .first {
     margin-top: 5px;
@@ -106,18 +106,20 @@ p {
     border: 1px solid #4968ec;
     border-right-style: none;
     border-left-style: none;
-    width: 70%;
+    width: 85%;
 
 }
 .main-text-button {
-    font-family: 'Futura PT', 'Medium';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 25px;
     color: #4968ec;
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
 }
 .main-share {
-    font-family: 'Futura PT', 'Book';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 25px;
     margin: 0;
     padding-top: 5px;
@@ -125,9 +127,11 @@ p {
 }
 .third-image {
     display: block;
-    padding-top: 25px;
     margin: 0 auto;
+    float: none;
+    padding-top: 25px;
 }
+
 .third-image-text {
     padding-top: 10px;
     text-align: center;
@@ -138,15 +142,18 @@ p {
     padding-right: 25px;
     float: left;
 }
-ul {
+.sourc {
     text-decoration: none;
 }
 .link {
-    font-family: 'Futura PT', 'Heavy';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: #4968ec;
     margin: 0;
     font-size: 19px;
     padding-top: 10px;
+    width: 100%;
+    text-decoration: none;
 }
 .link:hover {
     text-decoration: underline #4968ec;
@@ -160,4 +167,135 @@ sup {
 }
 .text-sup {
     font-size: 11px;
+}
+
+@media screen and (max-width: 1445px) {
+    .header-image-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main-wrapper{
+        width: 1200px;
+    }
+    .header_content {
+        width: 90%;
+    }
+    .header-image {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .main-wrapper{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .main-wrapper{
+        width: 720px;
+    }
+    p {
+        font-size: 14pt;
+    }
+    .link {
+        font-size: 14pt;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-wrapper{
+        width: 640px;
+    }
+    p {
+        font-size: 14pt;
+    }
+    .link {
+        font-size: 12pt;
+    }
+    .fourth-block-image {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .main-share {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .block-image {
+        float: none;
+        margin: 0 auto;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    h3 {
+        font-size: 15pt;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-wrapper{
+        width: 480px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 35pt;
+    }
+    h2 {
+        font-size: 23pt;
+    }
+    h3 {
+        font-size: 13pt;
+    }
+    .main-share,
+    .main-text-button  {
+        font-size: 16pt;
+    }
+    .block-image,
+    .fourth-image {
+        width: 80%;
+        height: auto;
+    }
+    .sourc {
+        margin: 0;
+        padding: 0;
+    }
+    .link {
+        font-size: 10pt;
+    }
+    img {
+        width: 80%;
+    }
+    .sources-block {
+        margin-top: 30px;
+    }
+    .header-text,
+    .header-title-text {
+        padding-left: 0;
+    }
+    .header-image {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .main-wrapper{
+        width: 380px;
+    }
+    .header-text {
+        width: 90%;
+    }
+    .header_content {
+        padding-top: 30px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .main-wrapper{
+        width: 80%;
+    }
+
 }
