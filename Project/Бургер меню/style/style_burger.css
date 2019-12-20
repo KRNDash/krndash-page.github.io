@@ -119,4 +119,7 @@
     .burger-menu__link {
         padding: 20px 20px;
     }
+    .b-logo-text {
+        padding-top: 0;
+    }
 }
