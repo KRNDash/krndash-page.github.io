@@ -1,48 +1,62 @@
 @font-face {
     font-family: 'Futura PT', 'Light';
-    src: url('FuturaPT-Light.otf') format('otf');
-    font-weight: 300;
+    src: url('woff/FuturaPT-Light.woff') format('woff'),
+        url('ttf/FuturaPT-Light.ttf') format('truetype'),
+        url('otf/FuturaPT-Light.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Bold';
-    src: url('FuturaPT-Bold.otf') format('otf');
-    font-weight: bold;
+    src: url('woff/FuturaPT-Bold.woff') format('woff'),
+        url('ttf/FuturaPT-Bold.ttf') format('truetype'),
+        url('otf/FuturaPT-Bold.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'ExtraBold';
-    src: url('FuturaPT-ExtraBold.otf') format('otf');
-    font-weight: 800;
+    src: url('woff/FuturaPT-ExtraBold.woff') format('woff'),
+        url('ttf/FuturaPT-ExtraBold.ttf') format('truetype'),
+        url('otf/FuturaPT-ExtraBold.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Demi';
-    src: url('FuturaPT-Demi.otf') format('otf');
-    font-weight: 500;
+    src: url('woff/FuturaPT-Demi.woff') format('woff'),
+        url('ttf/FuturaPT-Demi.ttf') format('truetype'),
+        url('otf/FuturaPT-Demi.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Heavy';
-    src: url('FuturaPT-Heavy.otf') format('otf');
-    font-weight: 900;
+    src: url('woff/FuturaPT-Heavy.woff') format('woff'),
+        url('ttf/FuturaPT-Heavy.ttf') format('truetype'),
+        url('otf/FuturaPT-Heavy.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Medium';
-    src: url('FuturaPT-Medium.otf') format('otf');
-    font-weight: 500;
+    src: url('woff/FuturaPT-Medium.woff') format('woff'),
+        url('ttf/FuturaPT-Medium.ttf') format('truetype'),
+        url('otf/FuturaPT-Medium.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Futura PT', 'Book';
-    src: url('FuturaPT-Book.otf') format('otf');
+    src: url('woff/FuturaPT-Book.woff') format('woff'),
+        url('ttf/FuturaPT-Book.ttf') format('truetype'),
+        url('otf/FuturaPT-Book.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
