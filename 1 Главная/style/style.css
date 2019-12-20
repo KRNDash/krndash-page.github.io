@@ -1,0 +1,214 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+body {
+    background: linear-gradient( #00193f,#371c69);
+    background-repeat: no-repeat;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.9s infinite;
+    -moz-animation: blink 0.9s infinite;
+    animation: blink 0.9s infinite;
+    text-align: center;
+    font-family: 'Futura PT', 'Demi';
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #ececed;
+    font-size: 55pt;
+    margin: 0;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 115px;
+}
+
+.title_typed {
+    text-align: center;
+    font-family: 'Futura PT', 'Demi';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ececed;
+    font-size: 55pt;
+    margin: 0;
+}
+
+.blocks {
+    margin: 68px auto 23px;
+    max-width: 1500px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button_wrapper {
+    display: block;
+    transition: 0.2s;
+    width: 400px;
+    height: 265px;
+    margin: 0 12px 24px 12px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 2, 37, 0.76);
+}
+
+.button_wrapper_text {
+    position: relative;
+    font-family: 'Futura PT', 'Medium';
+    font-size: 30pt;
+    font-weight: 500;
+    word-wrap: break-all;
+    text-transform: uppercase;
+    color: #ececed;
+    text-align: center;
+    margin: 112px 50px;
+    text-decoration: none;
+}
+.button_wrapper_text-2 {
+    margin: 80px 50px ;
+}
+.button_wrapper_text-3 {
+    margin: 80px 50px ;
+}
+
+
+.button_wrapper-1 {
+    background-image: url(../img/not-hover1.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-1:hover {
+    background-image: url(../img/hover1.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-2 {
+    background-image: url(../img/not-hover2.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-2:hover {
+    background-image: url(../img/hover2.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-3 {
+    background-image: url(../img/not-hover3.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-3:hover {
+    background-image: url(../img/hover3.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-4 {
+    background-image: url(../img/not-hover4.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-4:hover {
+    background-image: url(../img/hover4.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-5 {
+    background-image: url(../img/not-hover5.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-5:hover {
+    background-image: url(../img/hover5.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-6 {
+    background-image: url(../img/not-hover6.jpg);
+    background-repeat: no-repeat;
+}
+.button_wrapper-6:hover {
+    background-image: url(../img/hover6.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.mail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.mail_img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+
+}
+.email {
+    font-family: 'Futura PT', 'Light';
+    font-weight: 100;
+    font-size: 25px;
+    margin: 5px 0;
+    color: #ececed;
+}
+
+@media screen and (max-width: 650px) {
+    .title_typed {
+        font-size: 40pt;
+    }
+    .typed-cursor {
+        font-size: 40pt;
+    }
+    .button_wrapper_text {
+        font-size: 23pt;
+        margin: 65px 0;
+    }
+    .button_wrapper_text-3 {
+        margin: 50px 0;
+    }
+    .button_wrapper_text-2{
+        margin: 50px 0;
+    }
+    .button_wrapper {
+        width: 300px;
+        height: 165px;
+    }
+    .button_wrapper-6 {
+        background-image: url(../img/not-hover6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .button_wrapper-6:hover {
+        background-image: url(../img/hover6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .title_typed {
+        font-size: 30pt;
+    }
+    .typed-cursor {
+        font-size: 30pt;
+    }
+    .email {
+        font-size: 20px;
+    }
+}
