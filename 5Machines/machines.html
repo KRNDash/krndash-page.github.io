@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шифровальные машины</title>
+    <link rel="stylesheet" href="style/style_content.css">
+    <link rel="stylesheet" href="../Project/Бургер меню/style/style_burger.css">
+    <link rel="stylesheet" href="../Project/Style/style_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="burger-menu">
+        <a href="" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <a href="../1Main/index.html" class="burger-menu__link burger-menu__logo">
+                <p class="b-logo-text">криптография</p>
+            </a>
+            <a href="../2History/history.html" class="burger-menu__link">История</a>
+            <a href="../3Types/submenu/sub.html" class="burger-menu__link">Виды</a>
+            <a href="../4Encryption/encryption.html" class="burger-menu__link">Шифры</a>
+            <a href="../5Machines/machines.html" class="burger-menu__link">Машины</a>
+            <a href="../6Glossary/glossary.html" class="burger-menu__link">Глоссарий</a>
+            <a href="../7About/frameset_about.html" class="burger-menu__link">Об авторе</a>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <div class="menu_wrapper">
+                <div class="logo_wrapper">
+                    <a class="logo" href="../1Main/index.html" >
+                        <img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="logo_text">криптография</p>
+                    </a>
+                </div>
+                <div class="head-menu">
+                        <nav class="head-title_menu">
+                                <ul>
+                                    <li><a href="../2History/history.html"><i class="menu_border" class="head-title_menu-main"></i>история</a></li>
+                                    <li><a href="../3Types/submenu/sub.html"><i class="menu_border" class="head-title_menu-school"></i>виды</a>
+                                        <ul class="subsection">
+                                            <li><a href="../3Types/1Symmetric/symmetric.html">Симметрическое шифрование</a></li>
+                                            <li><a href="../3Types/2Asymmetric/asymmetric.html">Асимметрическое шифрование</a></li>
+                                            <li><a href="../3Types/3Hash/hash.html">Хэширование</a></li>
+                                            <li><a href="../3Types/4Signature/signature.html">Электронная подпись</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../4Encryption/encryption.html"><i class="menu_border" class="head-title_menu-aboute"></i>шифры</a></li>
+                                    <li><a href="../5Machines/machines.html"><i class="menu_border" class="head-title_menu-parents"></i>машины</a>
+                                        <ul class="subsection">
+                                                <li><a href="../5Machines/machines.html#Enigma">Энигма</a></li>
+                                                <li><a href="../5Machines/machines.html#Sigaba">Сигаба</a></li>
+                                                <li><a href="../5Machines/machines.html#Purple">Purple</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../6Glossary/glossary.html"><i class="menu_border" class="head-title_menu-teachers"></i>глоссарий</a></li>
+                                    <li><a href="../7About/frameset_about.html"><i class="menu_border" class="head-title_menu-galary"></i>об авторе</a></li>
+                </div>
+    </div>    
+    <div class="content">
+        <div class="header">
+            <div class="content-wrapper">
+                <div class="header_content">
+                    <div class="text-wrapper">
+                            <h1 class="header-title">Шифровальные машины</h1>
+                            <p class="header-text">Начало ХХ века ознаменовалось зарождением и созданием нового вида оружия для борьбы за господство на мировой арене — оружия информационного. 
+                                Важной составляющей государственного управления вооруженными силами стала система связи, которая смогла эффективно влиять на ход военных сражений, непосредственно влиять 
+                                на систему управления войсками, а иногда и частично выводить ее из строя. Такое оружие сверхопасно для защищенных систем, систем шифрования. В случае, если удавалось завладеть шифрами или ключами к ним, 
+                                предоставлялась возможность не только владеть информацией, передаваемой по этим линиям связи, а и посылать ложные указания, приказы, зашифровав их шифром противника.<sup class="text-sup">[1]</sup></p>      
+                    </div>
+                    <div class="image-text">
+                            <img src="img/enig.png" alt="Шифровальная машина 'Enigma'" class="header-image">
+                            <p class="image-text header-image-text">Шифровальная машина "Enigma"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-wrapper">
+                <div class="first">
+                    <div class="map">
+                        <img class="img-map" src="img/active-img2.jpg" alt="map" usemap="#Buttons">
+                        <map name="Buttons" wi>
+                            <area shape="circle" coords="71, 89, 50" href="#Enigma" alt="Энигма">
+                            <area shape="circle" coords="203, 89, 50" href="#Sigaba" alt="Сигаба">
+                            <area shape="circle" coords="332, 89, 50" href="#Purple" alt="Purple">
+                        </map>
+                    </div>
+                    <p id="Enigma"></p>
+                    <h2>Энигма<sup>[2]</sup></h2>
+                    <p class="main-text">Первой роторной машиной шифрования была «Энигма», состоявшая на вооружении Германии во время Второй мировой войны. Она имела три ротора, 
+                        связанных между собой. При повороте первого ротора соединенное с ним кольцо попадает в паз второго диска и толкает его. Аналогично итерации третьего ротора 
+                        контролируются вторым ротором. В итоге при каждом нажатии на клавишу машины одна и та же буква кодируется совершенно разными значениями.</p>
+                    <p class="main-text">При шифровании необходимо было учитывать начальное положение роторов, их порядок и положения колец. Для двойной замены букв 
+                        используется штекерная панель. Рефлектор осуществляет завершающую подстановку для контроля соответствия между операциями зашифрования и 
+                        расшифрования. Взгляни на конструкцию «Энигмы»:</p>
+                    <img class="center-image" src="img/sh-en.jpg" alt="Устройство Энигмы">
+                    <p class="image-text center-image-text">На рисунке жирной линией выделено, как буква A вводится с клавиатуры,<br> 
+                        кодируется штекером, проходит через три ротора, заменяется на рефлекторе и выходит зашифрованной буквой D.</p>
+                    <p class="main-text">«Энигма» долгое время считалась неуязвимой. Немцы ежедневно меняли положение штекеров, диски и их компоновку и положение. 
+                        Во время военных действий они ежедневно кодировали короткую последовательность букв, которая шифровалась дважды и передавалась в самом начале сообщения. 
+                        Адресат дешифровал ключ и устанавливал настройки машины согласно этому ключу. Именно это многократное 
+                        использование одного и того же ключа позволило аналитикам из Блетчли-Парка (главного шифровального подразделения Великобритании) взломать немецкий шифр.</p>
+                    <p class="main-text">На самом деле механизм «Энигмы» не является стойким, так как штекеры и рефлектор выполняют взаимоисключающие операции. 
+                        Пользуясь частотным анализом для достаточно большого шифротекста,
+                         можно подобрать положение роторов брутфорсом. Именно из-за этих уязвимостей «Энигма» остается лишь экспонатом в музее Блетчли-Парка.</p>
+                </div>
+                <div class="second">
+                    <p id="Sigaba"></p>
+                    <h2>Сигаба<sup>[3]</sup></h2>
+                    <div class="right-block-image">
+                            <img src="img/Sigaba.jpg" alt="SIGABA">
+                            <p class="image-text second-image-text main-image-text">Шифровальная машина «Сигаба»</p>
+                    </div>
+                    <p class="main-text">В общих чертах Энигма является прообразом SIGABA, обе машины используют серию роторов для шифрования одного символа в другой.
+                         Но если в Энигме использовалось 3 ротора, в SIGABA их было 15. Также в SIGABA не используется рефлектор.</p>
+                    <p class="main-text">В SIGABA есть 3 фрагмента с 5 роторов в каждом, действия каждых 2 фрагментов контролируются оставшимся.</p>
+                    <p class="main-text">Главный фрагмент машины называется шифрующие роторы, каждый из которых имеет 26 контактов. Роторы данного фрагмента 
+                        действовали аналогично другим роторным машинам, таких как Энигма, когда открытый текст письма был введен, сигнал подаётся на вход фрагмента,
+                         на выход поступает уже зашифрованный текст письма.</p>  
+                    <p class="main-text">Второй фрагмент машины называется контролирующие роторы. Каждый ротор там также имеет 26 контактов. 
+                        На каждом шаге роторы получают 4 сигнала. После пропуска сообщения через контролирующие роторы, выходное сообщение разделяется на 10 групп 
+                        произвольного размера от 1 до 6 контактов. Каждая группа поочерёдно подаётся на вход следующего фрагмента роторов.
+                        Третий фрагмент машины называется индексные роторы. Это роторы, меньшие по размеру, имеющие только 10 контактов и не двигающиеся во время шифрования.
+                        После пропуска текста через индексные роторы будут включены от 1 до 4 выходов из 5. Они перемещают шифрующие роторы.</p>
+                </div>
+                <div class="third">
+                    <p id="Purple"></p>
+                    <h2>Purple<sup>[4]</sup></h2>
+                    <div class="block-image left-block-image">
+                        <img class="fourth-image" src="img/purple.jpg" alt="Purple">
+                        <p class="image-text center-image-text main-image-text">Шифровальная машина «Purple»</p>
+                    </div>
+                    <p class="main-text">В 1937 году было завершено создание нового поколения шифраторов — 97-shiki injiki(九七式印字機, «Печатная машина Тип-97»). 
+                        Министерством иностранных дел использовалась модификации этой модели Angooki 
+                        Taipu-B (暗号機 タイプB, «Печатная машина Тип-B»), известная американским криптоаналитикам под кодовым именем Purple.</p>
+                    <p class="main-text">Главным конструктором Purple был Кадзуо Танабэ (田辺一雄), а его инженерами — Масадзи Ямамото (山本正治) и Эйкити Судзуки (鈴木恵吉).
+                        Стоит отметить, что именно Эйкити Судзуки предложил использовать шаговый искатель для повышения криптостойкости.</p>
+                    <p class="main-text">Шифрование в Purple также основывалось на движении четырех роторов, а секретный ключ задавался один раз в день. 
+                        Текст вводился с клавиатуры, при помощи роторов заменялся на шифрованный и выводился напечатанным на бумаге. При расшифровании процесс последовательного
+                         прохождения через роторы повторялся в обратном порядке. Такая система является совершенно стойкой. 
+                        Однако на практике ошибки при выборе ключей привели к тому, что Purple повторила судьбу немецкой «Энигмы». Она была взломана американским отделом криптоаналитиков.</p>
+                  <div class="sources-block">
+                    <h3>Источники</h3>
+                    <ul class="sourc">
+                        <a href="https://habr.com/ru/company/ua-hosting/blog/385783/" class="link">1. https://habr.com/ru/company/ua-hosting/blog/385783/</a>
+                        <a href="https://cryptoworld.su/lesons-of-cryptography-1/" class="link">2. https://cryptoworld.su/lesons-of-cryptography-1/</a>
+                        <a href="https://ru.wikipedia.org/wiki/SIGABA" class="link">3. https://ru.wikipedia.org/wiki/SIGABA</a>
+                        <a href="https://ru.wikipedia.org/wiki/Purple_(%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0)" class="link">4. https://ru.wikipedia.org/wiki/Purple</a>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-block">
+                        <div class="logo_wrapper">
+                                <a class="logo footer-logo" href="../1Main/index.html" >
+                                    <img class="logo_img" src="img/logo-wh.png" alt="logo">
+                                    <p class="logo_text footer-logo_text">криптография</p>
+                                </a>
+                            </div>
+                            <div class="mail">
+                                <img class="mail_img" src="img/mail.png" alt="mail box">
+                                <p class="email">barbash.elizaveta@yandex.ru</p>
+                            </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+        jQuery(document).ready(function () {
+        });
+    </script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="../Project/Бургер меню/js/burger-js.js"></script>
+</body>
+</html>

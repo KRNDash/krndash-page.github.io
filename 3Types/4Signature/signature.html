@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Электронная подпись</title>
+    <link rel="stylesheet" href="style/style_content.css">
+    <link rel="stylesheet" href="../../Project/Бургер меню/style/style_burger.css">
+    <link rel="stylesheet" href="../../Project/Style/style_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="burger-menu">
+        <a href="" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <a href="../../1Main/index.html" class="burger-menu__link burger-menu__logo">
+                <p class="b-logo-text">криптография</p>
+            </a>
+            <a href="../../2History/history.html" class="burger-menu__link">История</a>
+            <a href="../../3Types/submenu/sub.html" class="burger-menu__link">Виды</a>
+            <a href="../../4Encryption/encryption.html" class="burger-menu__link">Шифры</a>
+            <a href="../../5Machines/machines.html" class="burger-menu__link">Машины</a>
+            <a href="../../6Glossary/glossary.html" class="burger-menu__link">Глоссарий</a>
+            <a href="../../7About/frameset_about.html" class="burger-menu__link">Об авторе</a>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <div class="menu_wrapper">
+                <div class="logo_wrapper">
+                    <a class="logo" href="../../1Main/index.html">
+                        <img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="logo_text">криптография</p>
+                    </a>
+                </div>
+                <div class="head-menu">
+                        <nav class="head-title_menu">
+                                <ul>
+                                    <li><a href="../../2History/history.html"><i class="menu_border" class="head-title_menu-main"></i>история</a></li>
+                                    <li><a href="../../3Types/submenu/sub.html"><i class="menu_border" class="head-title_menu-school"></i>виды</a>
+                                        <ul class="subsection">
+                                            <li><a href="../../3Types/1Symmetric/symmetric.html">Симметрическое шифрование</a></li>
+                                            <li><a href="../../3Types/2Asymmetric/asymmetric.html">Асимметрическое шифрование</a></li>
+                                            <li><a href="../../3Types/3Hash/hash.html">Хэширование</a></li>
+                                            <li><a href="../../3Types/4Signature/signature.html">Электронная подпись</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../../4Encryption/encryption.html"><i class="menu_border" class="head-title_menu-aboute"></i>шифры</a></li>
+                                    <li><a href="../../5Machines/machines.html"><i class="menu_border" class="head-title_menu-parents"></i>машины</a>
+                                        <ul class="subsection">
+                                            <li><a href="../../5Machines/machines.html#Enigma">Энигма</a></li>
+                                            <li><a href="../../5Machines/machines.html#Sigaba">Сигаба</a></li>
+                                            <li><a href="../../5Machines/machines.html#Purple">Purple</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class="menu_border" class="head-title_menu-teachers"></i>глоссарий</a></li>
+                                    <li><a href="#"><i class="menu_border" class="head-title_menu-galary"></i>об авторе</a></li>
+                </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="content-wrapper">
+                <div class="header_content">
+                    <h1 class="header-title">Электронная подпись<sup>[1]</sup></h1>
+                    <div class="text-wrapper">  
+                            <p class="header-text">Криптографические подписи и их различные схемы являются фундаментом криптовалют. Именно с их помощью проверяются участники сети и правомерность каждой транзакции.
+                                Они также известны как цифровые подписи, и применяются далеко за пределами криптовалют. Для блокчейна с токенами выбирают ассиметричную криптографию, а тип подписи зависит от свойств, которые они предлагают.
+                                Криптовалюты породили новое масштабное применение цифровых подписей и заставили общество интересоваться ими глубже. Мы проведем краткий экскурс в историю вопроса.</p>
+                            <div class="image-text">
+                                <img src="img/el_head.jpg" alt="Электронная подпись" class="header-image">
+                                <p class="image-text header-image-text">Алгоритм ЭЦП(электронной цифровой подписи)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-wrapper">
+                <div class="first">
+                    <h2>История цифровых подписей</h2>
+                    <p class="main-text first-main-text">Первая концепция алгоритмов, которые легли в основу цифровой подписи, принадлежит Уитфилду Диффи и Мартину Хеллману. Она описана в статье 1976 года. 
+                        В этой работе решалось несколько проблем криптографии, в частности, введены функции, которые составлены так, что их легко вычислить в одном направлении и чрезвычайно трудно вычислить в обратном.</p>
+                    <p class="main-text first-main-text">Впоследствии появился первый примитивный алгоритм цифровой подписи, известный как RSA. Это самый распространенный криптографический алгоритм, который используется до сих пор и доминирует в безопасной передаче данных через Интернет. Вскоре после этого были разработаны известные схемы цифровой подписи, такие как Подпись Лэмпорта и Деревья Меркля.
+                        Цифровые подписи используют криптографию с открытым/закрытым ключом, где пара ключей используется как часть алгоритма для отправки личных сообщений по незащищенным каналам.</p>
+                    <p class="main-text first-main-text">Цель в том, чтобы проверить подлинность сообщения: сверить открытый ключ с закрытым ключом. При этом используется шифрование, то есть только владелец 
+                        закрытого ключа может расшифровать отправленное и зашифрованное сообщение с помощью открытого ключа. Третья сторона не может подписать такой же подписью и подделать ее.</p>
+                    <h3 class="text-bold">Обычно алгоритм цифровой подписи состоит из трех компонентов:</h3>
+                    <ul class="main-list-kinds">
+                            <li class="main-list">генерация ключей,</li>
+                            <li class="main-list">алгоритм подписи,</li>
+                            <li class="main-list">алгоритм проверки подписи.</li>
+                    </ul>
+                </div>
+                    <p class="main-text">Генерация ключа необходима для целостности цифровой подписи, поскольку она выводит закрытый ключ и соответствующий открытый ключ. 
+                        В криптовалютах закрытый ключ должен генерироваться случайным образом, чтобы никто другой не имел доступа к кошельку.
+                        Алгоритм подписи создает подпись на основе сообщения (то есть транзакции) и закрытого ключа.
+                        Алгоритм проверки проверяет подлинность подписи, когда есть сообщение, открытый ключ и цифровая подпись.</p>
+                    <p class="main-text">После того, как получатель транзакции проверит подлинность сообщения, он может проверить 
+                        целостность, выполнив транзакцию по тому же алгоритму хеширования, что и отправитель.</p>
+                    <img class="third-image" src="img/el.jpg" alt="электронная подпись">
+                    <div class="sources-block">
+                        <h3>Источники</h3>
+                        <ul class="sourc">
+                            <a href="https://zen.yandex.ru/media/crypto_fox/kriptograficheskie-podpisi--kratkii-ekskurs-dlia-novichkov-5c4aebf57fd71100ae5f30f8" class="link">1. https://zen.yandex.ru/media/crypto_fox/kriptograficheskie-podpisi--kratkii-ekskurs-dlia-novichkov-5c4aebf57fd71100ae5f30f8</a>
+                        </ul>
+                    </div>
+            </div>
+            <div class="footer">
+                <div class="footer-wrapper">
+                 <div class="footer-block">
+                        <div class="logo_wrapper">
+                            <a class="logo footer-logo" href="../../1Main/index.html" >
+                                <img class="logo_img" src="img/logo-wh.png" alt="logo">
+                                <p class="logo_text footer-logo_text">криптография</p>
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <img class="mail_img" src="img/mail.png" alt="mail box">
+                            <p class="email">barbash.elizaveta@yandex.ru</p>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+        jQuery(document).ready(function () {
+        });
+    </script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="../../Project/Бургер меню/js/burger-js.js"></script>
+</body>
+</html>

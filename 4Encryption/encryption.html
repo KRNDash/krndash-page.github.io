@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шифры</title>
+    <link rel="stylesheet" href="style/style_content.css">
+    <link rel="stylesheet" href="../Project/Бургер меню/style/style_burger.css">
+    <link rel="stylesheet" href="../Project/Style/style_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="burger-menu">
+        <a href="" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <a href="../1Main/index.html" class="burger-menu__link burger-menu__logo">
+                <p class="b-logo-text">криптография</p>
+            </a>
+            <a href="../2History/history.html" class="burger-menu__link">История</a>
+            <a href="../3Types/submenu/sub.html" class="burger-menu__link">Виды</a>
+            <a href="../4Encryption/encryption.html" class="burger-menu__link">Шифры</a>
+            <a href="../5Machines/machines.html" class="burger-menu__link">Машины</a>
+            <a href="../6Glossary/glossary.html" class="burger-menu__link">Глоссарий</a>
+            <a href="../7About/frameset_about.html" class="burger-menu__link">Об авторе</a>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <div class="menu_wrapper">
+                <div class="logo_wrapper">
+                    <a class="logo" href="../1Main/index.html" >
+                        <img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="logo_text">криптография</p>
+                    </a>
+                </div>
+                <div class="head-menu">
+                        <nav class="head-title_menu">
+                                <ul>
+                                    <li><a href="../2History/history.html"><i class="menu_border" class="head-title_menu-main"></i>история</a></li>
+                                    <li><a href="../3Types/submenu/sub.html"><i class="menu_border" class="head-title_menu-school"></i>виды</a>
+                                        <ul class="subsection">
+                                            <li><a href="../3Types/1Symmetric/symmetric.html">Симметрическое шифрование</a></li>
+                                            <li><a href="../3Types/2Asymmetric/asymmetric.html">Асимметрическое шифрование</a></li>
+                                            <li><a href="../3Types/3Hash/hash.html">Хэширование</a></li>
+                                            <li><a href="../3Types/4Signature/signature.html">Электронная подпись</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../4Encryption/encryption.html"><i class="menu_border" class="head-title_menu-aboute"></i>шифры</a></li>
+                                    <li><a href="../5Machines/machines.html"><i class="menu_border" class="head-title_menu-parents"></i>машины</a>
+                                        <ul class="subsection">
+                                                <li><a href="../5Machines/machines.html#Enigma">Энигма</a></li>
+                                                <li><a href="../5Machines/machines.html#Sigaba">Сигаба</a></li>
+                                                <li><a href="../5Machines/machines.html#Purple">Purple</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../6Glossary/glossary.html"><i class="menu_border" class="head-title_menu-teachers"></i>глоссарий</a></li>
+                                    <li><a href="../7About/frameset_about.html"><i class="menu_border" class="head-title_menu-galary"></i>об авторе</a></li>
+                </div>
+    </div>    
+    <div class="content">
+        <div class="header">
+            <div class="content-wrapper">
+                <div class="header_content">
+                    <div class="text-wrapper">
+                            <h1 class="header-title">Шифры</h1>
+                            <p class="header-text header-text1">Криптография — это искусство и наука сокрытия (через шифрование) чувствительной информации. Она включает в себя шифрование (когда шифр 
+                                первоначально применяется к необработанному «открытому/исходному тексту» и дешифрование, когда шифр используется для возвращения сообщению читабельной формы).<sup class="text-sup">[1]</sup></p>      
+                            <p class="header-text">Первым шифром, зародившимся в древних цивилизациях и актуальным, в некотором роде, и по 
+                                сей день, можно считать шифр замены. Чуть позже был придуман шифр сдвига, который применялся Юлием Цезарем, почему и был назван в его честь.<sup class="text-sup">[2]</sup></p>
+                    </div>
+                    <div class="image-text">
+                            <img src="img/tr.png" alt="Массонский треугольник" class="header-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-wrapper">
+                <div class="first">
+                    <h2>Шифр сдвига<sup>[3]</sup></h2>
+                    <p class="main-text main-text-table">Это один из самых первых типов шифра. Процесс шифрования очень прост. Он заключается в замене каждой буквмы исходного сообщения на другую, отстоящую от 
+                        исходной на заданное количество позиций в алфавите. Это количество позиций называется ключом. При ключе, равном трем, этот метод называется шифром Цезаря.
+                         Император использовал его для секретной переписки. Для того чтобы зашифровать сообщение, нужно построить таблицу подстановок:</p>
+                    <table>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                            <td>p</td>
+                            <td>q</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>u</td>
+                            <td>v</td>
+                            <td>w</td>
+                            <td>x</td>
+                            <td>y</td>
+                            <td>z</td>
+                        </tr>
+                        <tr>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                            <td>p</td>
+                            <td>q</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>u</td>
+                            <td>v</td>
+                            <td>w</td>
+                            <td>x</td>
+                            <td>y</td>
+                            <td>z</td>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                        </tr>
+                    </table>
+                    <h3 class="text-bold text-bold-table">Пример шифра</h3>
+                    <h3 class="text-bold">Исходный текст: Hi, Brut! How are you?<br>
+                        Шифрованный текст: Kl, Euxw! Krz duh brx?</h3>
+                </div>
+                <div class="second">
+                    <h2>Шифр замены<sup>[3]</sup></h2>
+                    <p class="main-text main-text-table">Это один из самых первых типов шифра. Процесс шифрования очень прост. Он заключается в замене каждой буквмы исходного сообщения на другую, отстоящую от 
+                        исходной на заданное количество позиций в алфавите. Это количество позиций называется ключом. При ключе, равном трем, этот метод называется шифром Цезаря.
+                         Император использовал его для секретной переписки. Для того чтобы зашифровать сообщение, нужно построить таблицу подстановок:</p>
+                    <table>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                            <td>e</td>
+                            <td>f</td>
+                            <td>g</td>
+                            <td>h</td>
+                            <td>i</td>
+                            <td>j</td>
+                            <td>k</td>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                            <td>o</td>
+                            <td>p</td>
+                            <td>q</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>u</td>
+                            <td>v</td>
+                            <td>w</td>
+                            <td>x</td>
+                            <td>y</td>
+                            <td>z</td>
+                        </tr>
+                        <tr>
+                            <td>b</td>
+                            <td>e</td>
+                            <td>x</td>
+                            <td>g</td>
+                            <td>w</td>
+                            <td>i</td>
+                            <td>q</td>
+                            <td>v</td>
+                            <td>l</td>
+                            <td>o</td>
+                            <td>u</td>
+                            <td>m</td>
+                            <td>p</td>
+                            <td>j</td>
+                            <td>r</td>
+                            <td>s</td>
+                            <td>t</td>
+                            <td>n</td>
+                            <td>k</td>
+                            <td>h</td>
+                            <td>f</td>
+                            <td>y</td>
+                            <td>z</td>
+                            <td>a</td>
+                            <td>d</td>
+                            <td>c</td>
+                        </tr>
+                    </table>
+                    <h3 class="text-bold text-bold-table">Пример шифра</h3>
+                    <h3 class="text-bold">Действуем аналогично предыдущему шифру. Для каждого символа исходного текста берем соответствующий ему из таблицы подстановки:</h3>
+                    <h3 class="text-bold">Исходный текст: Hi, Brut! How are you?<br>
+                        Шифрованный текст: Vl, Enfh!Vrz bnw drf?</h3>
+                </div>
+                <div class="third">
+                    <h2>Транспозиция<sup>[4]</sup></h2>
+                    <p class="main-text">В транспозирующих шифрах буквы переставляются по заранее определенному правилу. Например, если каждое слово пишется задом наперед,
+                         то из «all the better to see you with» получается «lla eht retteb ot ees joy htiw». Другой пример — менять местами каждые две буквы. Таким образом,
+                          предыдущее сообщение станет «la tl eh eb tt re ot es ye uo iw ht». Подобные шифры использовались в Первую Мировую и Американскую Гражданскую Войну,
+                           чтобы посылать важные сообщения. Сложные ключи могут сделать такой шифр довольно сложным на первый взгляд, но многие сообщения, 
+                        закодированные подобным образом, могут быть расшифрованы простым перебором ключей на компьютере. Попробуйте расшифровать «THGINYMROTSDNAKRADASAWTI».</p>
+                </div>
+                <div class="fourth">
+                    <h2>Азбука Морзе<sup>[4]</sup></h2>
+                    <p class="main-text">В азбуке Морзе каждая буква алфавита, все цифры и наиболее важные знаки препинания имеют свой код, состоящий из череды коротких 
+                        и длинных сигналов, часто называемых «точками и тире». Так, A — это «•–», B — «–•••», и т.д. В отличие от большинства шифров, азбука Морзе используется
+                         не для затруднения чтения сообщений, а наоборот, для облегчения их передачи (с помощью телеграфа). Длинные и короткие сигналы посылаются с помощью 
+                         включения и выключения электрического тока. Телеграф и азбука Морзе навсегда изменили мир, сделав возможной молниеносную передачу информации между разными странами, 
+                        а также сильно повлияли на стратегию ведения войны, ведь теперь можно было можно осуществлять почти мгновенную коммуникацию между войсками.</p>
+                    <img class="third-image" src="img/Morze.jpg" alt="Азбука Морзе">
+                    <h2>Моноалфавитная замена<sup>[4]</sup></h2>
+                    <p class="main-text">ROT1, азбука Морзе, шифр(ы) Цезаря относятся к одному и тому же типу шифров — моноалфавитной замене. Это значит, что каждая буква
+                        заменяется на одну и только одну другую букву или символ. Такие шифры очень легко расшифровать даже без знания ключа. Делается это при помощи частотного
+                        анализа. Например, наиболее часто встречающаяся буква в английском алфавите — «E». Таким образом, в тексте, зашифрованном моноалфавитным шрифтом, наиболее
+                        часто встречающейся буквой будет буква, соответствующая «E». Вторая наиболее часто встречающаяся буква — это «T», а третья — «А». Человек, расшифровывающий 
+                        моноалфавитный шифр, может смотреть на частоту встречающихся букв и почти законченные слова. Так, «T_E» с большой долей вероятности окажется «ТНЕ».
+                        К сожалению, этот принцип работает только для длинных сообщений. Короткие просто не содержат в себе достаточно слов, чтобы с достаточной достоверностью 
+                        выявить соответствие наиболее часто встречающихся символов буквам из обычного алфавита. Мария Стюарт использовала невероятно сложный моноалфавитный шифр с
+                        несколькими вариациями, но когда его наконец-то взломали, прочитанные 
+                        сообщения дали ее врагам достаточно поводов, чтобы приговорить ее к смерти. Ptbndcb ymdptmq bnw yew, bnwzw raw rkbcriie wrze bd owktxnwa.</p>
+                </div>
+                <div class="sources-block">
+                    <h3>Источники</h3>
+                    <ul class="sourc">
+                        <a href="https://tproger.ru/translations/understanding-cryptography/" class="link">1. https://tproger.ru/translations/understanding-cryptography/</a>
+                        <a href="https://xakep.ru/2015/12/24/crypto-part1/ " class="link">2. https://xakep.ru/2015/12/24/crypto-part1/ </a>
+                        <a href="https://cryptoworld.su/lesons-of-cryptography-1/#lwptoc4 " class="link">3. https://cryptoworld.su/lesons-of-cryptography-1/#lwptoc4 </a>
+                        <a href="https://tproger.ru/translations/10-codes-and-ciphers/ " class="link">4. https://tproger.ru/translations/10-codes-and-ciphers/ </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-block">
+                        <div class="logo_wrapper">
+                                <a class="logo footer-logo" href="../1Main/index.html" >
+                                    <img class="logo_img" src="img/logo-wh.png" alt="logo">
+                                    <p class="logo_text footer-logo_text">криптография</p>
+                                </a>
+                            </div>
+                            <div class="mail">
+                                <img class="mail_img" src="img/mail.png" alt="mail box">
+                                <p class="email">barbash.elizaveta@yandex.ru</p>
+                            </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+        jQuery(document).ready(function () {
+        });
+    </script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="../Project/Бургер меню/js/burger-js.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #082541;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu-wrapper {
+        display: none;
+    }
+}

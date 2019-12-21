@@ -2,27 +2,27 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow: hidden;
+    overflow-y: scroll;
 }
+
+
 .burger-menu {
     display: none;
 }
 .menu_wrapper {
+    overflow: hidden;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: auto;
 }
-
 .logo_wrapper {
-    margin: 0;
+    min-width: 200px;
+    padding-left: 290px;
 }
 a {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     text-decoration: none;
-    margin: 0 90px 0 290px;
 }
 .logo_img {
     align-self: center;
@@ -34,7 +34,7 @@ a {
     font-weight: 700;
     font-size: 23pt;
     color: #082541;
-    padding-top: 20px;
+    padding-top: 25px;
     margin: 0;
 }
 
@@ -72,7 +72,7 @@ a {
    .head-title_menu > ul li a{
     display: block;
     margin: 0;
-    padding: 26px 44.5px;
+    padding: 25px 47px;
     text-align: center;
     font-size: 18px; 
     min-width: 100px;
@@ -97,8 +97,8 @@ a {
    .head-title_menu li > ul li a{
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 14pt;
     text-transform: none;
+    font-size: 21px;
     padding: 10px;
     background: #4968ec;
     transition: height 0.5s, opacity 0.8s;
@@ -113,6 +113,8 @@ a {
     box-shadow: 0 5px 10px rgba(8, 27, 70, 0.575);
    }
    
+   /* Стиль фиксированного меню */
+
    .headhesive {
        width: 100%;
        position: fixed;
@@ -128,84 +130,103 @@ a {
        display: none;
    }
    .headhesive .logo_text{
-
        color: #ececed;
        font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 22pt;
-        padding-top: 25px;
+        padding-left: 110px;
+        padding-top: 35px;
+        padding-bottom: 0;
    }
-
+   .headhesive .logo_wrapper {
+       padding-bottom: 0;
+   }
    .headhesive--stick {
        background-color: #082541;
         opacity: 95%;
- 
    }
 
-/* Адаптация верхнего меню */
-@media screen and (max-width: 1825px) {
-    .head-menu {
-        width: 60%;
-    }
-    .head-title_menu > ul li a{
-        padding: 22.8px 34px;
-       }
-    a {
-        margin: 0 90px 0 230px;
-    }
+
+/* Стиль подвала */
+
+.footer-wrapper-table {
+    width: 70%;
+}
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #082541 ;
+    padding-bottom: 10px;
+}
+.footer-logo_text {
+    padding-top:70px;
+    color: #ececed;
+}
+.footer-logo {
+    margin: 0;
+    padding-right: 60px;
+}
+.footer-logo_img {
+    padding: 0;
+    margin: 0;
 }
 
-@media screen and (max-width: 1680px) {
-    .head-menu {
-        width: 60%;
-    }
-    .head-title_menu > ul li a{
-        padding: 22.8px 22px;
-       }
-    a {
-        margin: 0 50px 0 150px;
-    }
+.mail {
+    padding-left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
 }
-@media screen and (max-width: 1410px) {
-    .head-menu {
-        width: 60%;
-    }
-    .head-title_menu > ul li a{
-        padding: 22.8px 15px;
-       }
-    a {
-        margin: 0 40px 0 130px;
-    }
+.mail_img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0 15px 0;
 }
-@media screen and (max-width: 1295px) {
-    .head-menu {
-        width: 60%;
-    }
-    .head-title_menu > ul li a{
-        padding: 22.8px 12px;
-       }
-    a {
-        margin: 0 20px 0 80px;
-    }
+.email {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 13px 0 0 0;
+    color: #ececed;
 }
 
-@media screen and (max-width: 1250px) {
-    .head-menu {
-        width: 100%;
+
+@media only screen and (max-width: 1890px) {
+    .logo_wrapper {
+        padding-left: 220px;
     }
     .head-title_menu > ul li a{
-        padding: 22.8px 5px;
+        padding: 25px 42px;
        }
-    .menu_wrapper {
-        justify-content: space-around;
-    }
-    a {
-        margin: 0 auto;
-        padding-bottom: 5px;
+}
+@media only screen and (max-width: 1820px) {
+    .logo_wrapper {
+        padding-left: 170px;
     }
 }
-@media screen and (max-width: 860px) {
+@media only screen and (max-width: 1750px) {
+    .logo_wrapper {
+        padding-left: 100px;
+    }
+    .head-title_menu > ul li a{
+        padding: 25px 37px;
+       }
+}
+
+@media only screen and (max-width: 1555px) {
+    .logo_wrapper {
+        padding-left: 90px;
+    }
+    .head-title_menu > ul li a{
+        padding: 25px 33px;
+       }
+}
+/* Бургер-меню появляется */
+@media screen and (max-width: 1500px) {
     .menu_wrapper {
         display: none;
     }
@@ -214,145 +235,35 @@ a {
     }
 }
 
+@media screen and (max-width: 900px) {
 
-/* Стиль подвала */
-
-.footer {
-    width: 100%;
-    margin-top: 100px;
-    background-color: #082541;
-}
-.footer-wrapper {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 30px 0 20px 0;
-}
-.footer-block {
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-logo_text {
-    padding-top: 25px;
-    color: #ececed;
-}
-.footer-logo {
-    margin: 0;
-}
-.mail {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.mail_img {
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 15px 10px;
-
-}
-.email {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    margin: 5px 0;
-    color: #ececed;
-}
-
-@media screen and (max-width: 1420px) {
-    .footer-wrapper {
-        width: 90%;
-    }
-}
-@media screen and (max-width: 1300px) {
-    .footer-wrapper {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 980px) {
-    .footer-wrapper {
-        width: 50%;
-    }
     .logo_img {
-        margin: 0 30px;
+        display: none;
     }
     .mail_img {
-        margin: 20px 30px;
+        display: none;
+    }
+    .mail {
+        margin-top: 0;
+        padding-left: 0;
     }
 }
 
-@media screen and (max-width: 840px) {
-    .footer-wrapper {
-        width: 60%;
-    }
-    .logo_img {
-        margin-top: 10px;
-        margin-right: 10px;
-        width: 50px;
-        height: auto;
-    }
-    .mail_img {
-        margin: 20px 5px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .footer-wrapper {
-        width: 60%;
-    }
-    .logo_img {
-        margin-top: 10px;
-        margin-right: 10px;
-        width: 50px;
-        height: auto;
-    }
-    .mail_img {
-        margin: 20px 5px;
-    }
-}
-@media screen and (max-width: 620px) {
-    .footer-wrapper {
-        width: 80%;
-    }
-    .logo_img {
-        margin-top: 10px;
-        margin-right: 12px;
-        width: 50px;
-        height: auto;
-    }
-    .mail_img {
-        margin-right: 15px;
-    }
-}
+
 @media screen and (max-width: 560px) {
-    .footer-wrapper {
-        width: 76%;
-    }
-    .logo_img {
-        margin-top: 10px;
-        margin-right: 12px;
-        width: 50px;
-        height: auto;
-    }
-    .mail_img {
-        margin-right: 15px;
-    }
+
     .footer-wrapper {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .footer-wrapper {
-        width: 50%;
-    }
+
     .logo_text {
         font-size: 15pt;
         text-align: center;
         width: 100%;
-        padding: 0 30px;
+        padding: 30px 30px;
     }
     .logo_img {
         display: none;
@@ -367,9 +278,7 @@ a {
     }
 }
 @media screen and (max-width: 320px) {
-    .footer-wrapper {
-        width: 100%;
-    }
+
     .footer-wrapper {
         display: block;
     }

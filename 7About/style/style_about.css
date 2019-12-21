@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #ececed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.burger-menu {
+    display: none;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45pt;
+    font-weight: 900;
+    color: #4968ec;
+    text-align: center;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+h2 {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28pt;
+    font-weight: 700;
+    color: #082541;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #082541;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 15px;
+}
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45pt;
+    font-weight: 700;
+    color: #082541;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-top: 0;
+}
+.img-photo {
+    padding-top: 150px;
+    float: right;
+}
+.text-wrapper {
+    margin: 0 20px;
+    width: 1180px;
+}
+.information-block {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid #4968ec;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 50px;
+}
+.info-text {
+    padding-top: 10px;
+    margin: 0;
+}
+.text-info-h2 {
+    margin-bottom: 15px;
+}
+.info-wrapper-p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.info-block-text {
+    width: 70%;
+}
+.right-text {
+    padding-right: 35px;
+    text-align: right;
+}
+.info-text-ch {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 860px) {
+    .menu_wrapper {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .img-photo {
+        display: block;
+        padding-top: 40px;
+        float: none;
+        margin: 0 auto;
+    }
+    .info-block-text {
+      width: 100%;  
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .img-photo {
+        display: block;
+        padding-top: 40px;
+        float: none;
+        margin: 0 auto;
+    }
+    .info-block-text {
+      text-align: left;
+    }
+    .right-text {
+        text-align: left;
+    }
+    .info-wrapper-p {
+        display: block;
+    }
+    .img-photo {
+        width: 60%;
+        height: auto;
+    }
+}

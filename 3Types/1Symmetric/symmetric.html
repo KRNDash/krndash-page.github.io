@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Симметричная криптография</title>
+    <link rel="stylesheet" href="style/style_content.css">
+    <link rel="stylesheet" href="../../Project/Бургер меню/style/style_burger.css">
+    <link rel="stylesheet" href="../../Project/Style/style_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="burger-menu">
+        <a href="" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <a href="../../1Main/index.html" class="burger-menu__link burger-menu__logo">
+                <p class="b-logo-text">криптография</p>
+            </a>
+            <a href="../../2History/history.html" class="burger-menu__link">История</a>
+            <a href="../../3Types/submenu/sub.html" class="burger-menu__link">Виды</a>
+            <a href="../../4Encryption/encryption.html" class="burger-menu__link">Шифры</a>
+            <a href="../../5Machines/machines.html" class="burger-menu__link">Машины</a>
+            <a href="../../6Glossary/glossary.html" class="burger-menu__link">Глоссарий</a>
+            <a href="../../7About/frameset_about.html" class="burger-menu__link">Об авторе</a>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <div class="menu_wrapper">
+                <div class="logo_wrapper">
+                    <a class="logo" href="../../1Main/index.html">
+                        <img class="logo_img" src="img/logo.png" alt="logo">s
+                        <p class="logo_text">криптография</p>
+                    </a>
+                </div>
+                <div class="head-menu">
+                        <nav class="head-title_menu">
+                                <ul>
+                                    <li><a href="../../2History/history.html"><i class="menu_border" class="head-title_menu-main"></i>история</a></li>
+                                    <li><a href="../../3Types/submenu/sub.html"><i class="menu_border" class="head-title_menu-school"></i>виды</a>
+                                        <ul class="subsection">
+                                            <li><a href="../../3Types/1Symmetric/symmetric.html">Симметрическое шифрование</a></li>
+                                            <li><a href="../../3Types/2Asymmetric/asymmetric.html">Асимметрическое шифрование</a></li>
+                                            <li><a href="../../3Types/3Hash/hash.html">Хэширование</a></li>
+                                            <li><a href="../../3Types/4Signature/signature.html">Электронная подпись</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../../4Encryption/encryption.html"><i class="menu_border" class="head-title_menu-aboute"></i>шифры</a></li>
+                                    <li><a href="../../5Machines/machines.html"><i class="menu_border" class="head-title_menu-parents"></i>машины</a>
+                                        <ul class="subsection">
+                                            <li><a href="../../5Machines/machines.html#Enigma">Энигма</a></li>
+                                            <li><a href="../../5Machines/machines.html#Sigaba">Сигаба</a></li>
+                                            <li><a href="../../5Machines/machines.html#Purple">Purple</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class="menu_border" class="head-title_menu-teachers"></i>глоссарий</a></li>
+                                    <li><a href="#"><i class="menu_border" class="head-title_menu-galary"></i>об авторе</a></li>
+                </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="content-wrapper">
+                <div class="header_content">
+                    <h1 class="header-title">Симметричная криптография<sup>[1]</sup></h1>
+                    <div class="text-wrapper">  
+                            <p class="header-text">В криптосистеме, в которой применяется симметричная криптография, отправитель и получатель используют два экземпляра одного и того же ключа для зашифрования и расшифрования информации. Таким образом, ключ имеет двойную функциональность и применяется как в процессе зашифрования, так и в процессе расшифрования. Симметричные ключи также называют секретными ключами, т.к. этот тип шифрования предполагает, что каждый из пользователей хранит ключ в секрете и надлежащим образом защищает его. Если атакующий получит этот ключ, он сможет расшифровать с его помощью любое перехваченное зашифрованное на нем сообщение.</p>
+                            <div class="image-text">
+                                <img src="img/Sim_head.jpg" alt="Симметрическое" class="header-image">
+                                <p class="image-text header-image-text">При использовании симметричного алгоритма, <br>отправитель и получатель используют один и тот же ключ <br>для зашифрования и расшифрования данных</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-wrapper">
+                <div class="first">
+                    <p class="main-text first-main-text">Каждой паре пользователей, для защищенного с помощью симметричной криптографии обмена данными, требуется два экземпляра одного и того же ключа. Например, если Дену и Ирине нужно обмениваться данными, им обоим нужно получить копию одного ключа. Если Ден хочет также с использованием симметричной криптографии взаимодействовать с Нормом и Дейвом, ему нужно иметь три отдельных ключа – по одному на каждого друга. Это не является большой проблемой, пока Дену не потребуется взаимодействовать с сотней других людей за несколько месяцев и сохранять историю переписки. Ведь это потребует использования соответствующего ключа для переписки с каждым конкретным получателем. В таком случае это может стать сложнейшей задачей. Если десяти людям необходимо безопасно обмениваться данными друг с другом с использованием симметричной криптографии, им потребуется 45 ключей. Если же взаимодействовать нужно ста людям, им потребуется 4950 ключей. Формула для расчета необходимого количества симметричных ключей выглядит следующим образом:</p>
+                    <div class="formula-wrapper">
+                        <p class="formula">Число ключей = N(N – 1)/2 <br> где N – число абонентов</p>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="block-image">
+                            <img src="img/lock.png" alt="Замок">
+                            <p class="image-text second-image-text main-image-text"></p>
+                    </div>
+                    <p class="main-text">При использовании симметричных алгоритмов отправитель и получатель используют один и тот же ключ для процессов зашифрования и расшифрования информации. Безопасность таких алгоритмов полностью зависит от того, насколько хорошо пользователи защищают ключи. В таком случае безопасность полностью зависит от персонала, который должен хранить свои ключи в секрете. Если ключ скомпрометирован, все сообщения, зашифрованные на этом ключе, могут быть расшифрованы и прочитаны злоумышленником. В действительности, это еще больше усложняется, поскольку ключи необходимо безопасно распространять и обновлять их при необходимости. Если Дену нужно взаимодействовать с Нормом впервые, Ден должен решить, каким образом безопасно передать Норму ключ. Если он сделает это небезопасно, например, просто отправив ключ по электронной почте, этот ключ может быть легко перехвачен и использован злоумышленником. Поэтому Ден должен передать ключ Норму нестандартным способом. К примеру, Ден может записать ключ на флеш-накопитель и положить его на стол Норму или отправить его Норму с доверенным курьером. Процесс распространения симметричных ключей может стать очень сложной и громоздкой задачей.</p>
+                    <p class="main-text">Поскольку оба пользователя используют один и тот же ключ для зашифрования и расшифрования сообщений, симметричные криптосистемы могут обеспечить конфиденциальность, но не аутентификацию или неотказуемость. Такой криптографический алгоритм не позволит доказать, кто реально отправил сообщение, т.к. оба пользователя используют один и тот же ключ.</p>
+                    <p class="main-text">Но если симметричные криптосистемы имеют столько недостатков и проблем, почему они используются почти повсеместно? Потому что они обеспечивают очень высокую скорость обработки данных и их очень трудно взломать. Симметричные алгоритмы гораздо быстрее асимметричных. Они могут сравнительно быстро зашифровывать и расшифровывать большие объемы данных. Кроме того, данные, зашифрованные симметричным алгоритмом с использованием длинного ключа, очень сложно вскрыть.</p>  
+                    <h3 class="text-bold">Ниже приведены некоторые примеры симметричных алгоритмов, которые будут подробно рассмотрены позднее в разделе<br>«Блочные и поточные шифры».</h3>
+                    <ul class="main-list-kinds">
+                        <li class="main-list">Data Encryption Standard (DES)</li>
+                        <li class="main-list">Triple-DES (3DES)</li>
+                        <li class="main-list">Blowfish</li>
+                        <li class="main-list">IDEA</li>
+                        <li class="main-list">RC4, RC5 и RC6</li>
+                        <li class="main-list">Advanced Encryption Standard (AES)</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h2>Подведём итоги</h2>
+                    <table class="table-main">
+                        <colgroup>
+                            <col >
+                        </colgroup>
+                        <tr class="table-main-tr">
+                            <th>Сильные стороны</th>
+                            <th>Слабые стороны</th>
+                        </tr>
+                        <tr class="table-main-tr">
+                            <td>Гораздо быстрее асимметричных систем</td>
+                            <td>Требует безопасного механизма передачи ключей</td>
+                        </tr>
+                        <tr class="table-main-tr">
+                            <td>При использовании длинного ключа сложно взломать</td>
+                            <td>Каждой паре пользователей нужен уникальный ключ; по мере увеличении количества пользователей, 
+                                возрастающее число ключей может сделать управление ими просто нереальной задачей</td>
+                        </tr>
+                        <tr class="table-main-tr">
+                            <td></td>
+                            <td>Обеспечивает конфиденциальность, но не обеспечивает аутентификацию или неотказуемость</td>
+                    </tr>
+                    </table>
+                    <div class="sources-block">
+                        <h3>Источники</h3>
+                        <ul class="sourc">
+                            <a href="http://dorlov.blogspot.com/2010/08/issp-06-2.html" class="link">1. http://dorlov.blogspot.com/2010/08/issp-06-2.html</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-wrapper">
+                 <div class="footer-block">
+                        <div class="logo_wrapper">
+                            <a class="logo footer-logo" href="../../1Main/index.html" >
+                                <img class="logo_img" src="img/logo-wh.png" alt="logo">
+                                <p class="logo_text footer-logo_text">криптография</p>
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <img class="mail_img" src="img/mail.png" alt="mail box">
+                            <p class="email">barbash.elizaveta@yandex.ru</p>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+        jQuery(document).ready(function () {
+        });
+    </script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="../../Project/Бургер меню/js/burger-js.js"></script>
+</body>
+</html>

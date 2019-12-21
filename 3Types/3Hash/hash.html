@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Хэширование</title>
+    <link rel="stylesheet" href="style/style_content.css">
+    <link rel="stylesheet" href="../../Project/Бургер меню/style/style_burger.css">
+    <link rel="stylesheet" href="../../Project/Style/style_menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="burger-menu">
+        <a href="" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <a href="../../1Main/index.html" class="burger-menu__link burger-menu__logo">
+                <p class="b-logo-text">криптография</p>
+            </a>
+            <a href="../../2History/history.html" class="burger-menu__link">История</a>
+            <a href="../../3Types/submenu/sub.html" class="burger-menu__link">Виды</a>
+            <a href="../../4Encryption/encryption.html" class="burger-menu__link">Шифры</a>
+            <a href="../../5Machines/machines.html" class="burger-menu__link">Машины</a>
+            <a href="../../6Glossary/glossary.html" class="burger-menu__link">Глоссарий</a>
+            <a href="../../7About/frameset_about.html" class="burger-menu__link">Об авторе</a>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <div class="menu_wrapper">
+                <div class="logo_wrapper">
+                    <a class="logo" href="../../1Main/index.html">
+                        <img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="logo_text">криптография</p>
+                    </a>
+                </div>
+                <div class="head-menu">
+                        <nav class="head-title_menu">
+                                <ul>
+                                    <li><a href="../../2History/history.html"><i class="menu_border" class="head-title_menu-main"></i>история</a></li>
+                                    <li><a href="../../3Types/submenu/sub.html"><i class="menu_border" class="head-title_menu-school"></i>виды</a>
+                                        <ul class="subsection">
+                                            <li><a href="../../3Types/1Symmetric/symmetric.html">Симметрическое шифрование</a></li>
+                                            <li><a href="../../3Types/2Asymmetric/asymmetric.html">Асимметрическое шифрование</a></li>
+                                            <li><a href="../../3Types/3Hash/hash.html">Хэширование</a></li>
+                                            <li><a href="../../3Types/4Signature/signature.html">Электронная подпись</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../../4Encryption/encryption.html"><i class="menu_border" class="head-title_menu-aboute"></i>шифры</a></li>
+                                    <li><a href="../../5Machines/machines.html"><i class="menu_border" class="head-title_menu-parents"></i>машины</a>
+                                        <ul class="subsection">
+                                            <li><a href="../../5Machines/machines.html#Enigma">Энигма</a></li>
+                                            <li><a href="../../5Machines/machines.html#Sigaba">Сигаба</a></li>
+                                            <li><a href="../../5Machines/machines.html#Purple">Purple</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class="menu_border" class="head-title_menu-teachers"></i>глоссарий</a></li>
+                                    <li><a href="#"><i class="menu_border" class="head-title_menu-galary"></i>об авторе</a></li>
+                </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="content-wrapper">
+                <div class="header_content">
+                    <h1 class="header-title">Хэширование<sup>[1]</sup></h1>
+                    <div class="text-wrapper">  
+                            <p class="header-text">Хеширование (иногда «хэширование», англ. hashing) — преобразование по детерминированному алгоритму входного 
+                                массива данных произвольной длины в выходную битовую строку фиксированной длины. 
+                                Такие преобразования также называются хеш-функциями или функциями свёртки, а их результаты называют хешем, хеш-кодом или сводкой сообщения(англ. message digest).</p>
+                            <div class="image-text">
+                                <img src="img/hash.jpg" alt="Хэширование" class="header-image">
+                                <p class="image-text header-image-text">Хэширование</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-wrapper">
+                <div class="first">
+                    <p class="main-text first-main-text">Хеширование применяется для построения ассоциативных массивов, поиска дубликатов в сериях наборов данных, построения достаточно уникальных 
+                        идентификаторов для наборов данных, контрольное суммирование с целью обнаружения случайных или намеренных ошибок при хранении или передаче, для хранения паролей в системах 
+                        защиты (в этом случае доступ к области памяти, где находятся пароли, не позволяет восстановить сам пароль), при выработке электронной подписи (на практике часто подписывается 
+                        не само сообщение, а его хеш-образ).</p>
+                    <p class="main-text first-main-text">В общем случае однозначного соответствия между исходными данными и хеш-кодом нет в силу того, что количество значений хеш-функций меньше, 
+                            чем вариантов входного массива; существует множество массивов с разным содержимым, но дающих одинаковые хеш-коды — так называемые коллизии. Вероятность возникновения коллизий 
+                            играет немаловажную роль в оценке качества хеш-функций.</p>
+                    <p class="main-text first-main-text">Существует множество алгоритмов хеширования с различными свойствами (разрядность, вычислительная сложность, криптостойкость и т. п.). 
+                        Выбор той или иной хеш-функции определяется спецификой решаемой задачи. Простейшими примерами хеш-функций могут служить контрольная сумма или CRC.</p>
+                </div>
+                <div class="second">
+                    <h2>История</h2>
+                    <div class="block-image">
+                            <img src="img/Huns.jpg" alt="Ханс Петер Лун">
+                            <p class="image-text second-image-text main-image-text">Ханс Петер Лун</p>
+                    </div>
+                    <p class="main-text">Дональд Кнут относит первую систематическую идею хеширования к сотруднику IBM Хансу Петеру Луну (нем. Hans Peter Luhn), предложившему хеш-кодирование в январе 1953 года.</p>
+                    <p class="main-text">В 1956 году Арнольд Думи (англ. Arnold Dumey) в своей работе «Computers and automation» первым представил концепцию хеширования таковой, какой её знает большинство программистов сейчас. Думи рассматривал хеширование, как решение «Проблемы словаря», а также предложил использовать в качестве хеш-адреса остаток деления на простое число.
+                        Первой серьёзной работой, связанной с поиском в больших файлах, была статья Уэсли Питерсона (англ. W. Wesley Peterson) в IBM Journal of Research and Development 1957 года, 
+                        в которой он определил открытую адресацию, а также указал на ухудшение производительности при удалении. Спустя шесть лет была опубликована работа Вернера Бухгольца 
+                        (нем. Werner Buchholz), в которой проведено обширное исследование хеш-функций. В течение нескольких последующих лет хеширование широко использовалось, 
+                        однако не было опубликовано никаких значимых работ.</p>
+                    <p class="main-text">В 1967 году хеширование в современном значении упомянуто в книге Херберта Хеллермана «Принципы цифровых вычислительных систем». В 1968 году Роберт Моррис (англ. Robert Morris) опубликовал в Communications of the ACM большой обзор по хешированию, эта работа считается ключевой публикацией, вводящей понятие о хешировании в научный оборот и закрепившей ранее применявшийся только в жаргоне специалистов термин «хеш».
+                        До начала 1990-х годов в русскоязычной литературе в качестве эквивалента термину «хеширование» благодаря работам Андрея Ершова использовалось слово «расстановка», 
+                        а для коллизий использовался термин "конфликт" (Ершов использовал «расстановку» с 1956 года, в русскоязычном издании книги Вирта «Алгоритмы и структуры данных» 1989 года
+                         также используется термин «расстановка»). Предлагалось также назвать метод русским словом «окрошка». Однако ни один из этих вариантов не прижился, и в русскоязычной литературе 
+                         используется преимущественно термин «хеширование».</p>
+                </div>
+                <div class="third">
+                    <h2>Подведём итоги<sup>[2]</sup></h2>
+                    <table class="table-main">
+                        <colgroup>
+                            <col >
+                        </colgroup>
+                        <tr class="table-main-tr">
+                            <th>Сильные стороны</th>
+                            <th>Слабые стороны</th>
+                        </tr>
+                        <tr class="table-main-tr">
+                            <td>Обращение к данным по значению ключа происходит за одну операцию ввода/вывода</td>
+                            <td>Количество данных и распределение значений ключа должны быть известны заранее</td>
+                        </tr>
+                        <tr class="table-main-tr">
+                            <td>Не нужно создавать никаких дополнительных структур (типа индекса) и тратить память на их хранение</td>
+                            <td>Записи обычно неупорядочены по значению ключа, что приводит к дополнительным затратам, например, при выполнении сортировки</td>
+                        </tr>
+                        <tr class="table-main-tr">
+                            <td></td>
+                            <td>Сложности подбора хеш-функции</td>
+                    </tr>
+                    </table>
+                    <div class="sources-block">
+                        <h3>Источники</h3>
+                        <ul class="sourc">
+                            <a href="https://www.sites.google.com/site/kriptografics/hesirovanie" class="link">1. https://www.sites.google.com/site/kriptografics/hesirovanie</a>
+                            <a href="https://studfile.net/preview/4374261/" class="link">2. https://studfile.net/preview/4374261/</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-wrapper">
+                 <div class="footer-block">
+                        <div class="logo_wrapper">
+                            <a class="logo footer-logo" href="../../1Main/index.html" >
+                                <img class="logo_img" src="img/logo-wh.png" alt="logo">
+                                <p class="logo_text footer-logo_text">криптография</p>
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <img class="mail_img" src="img/mail.png" alt="mail box">
+                            <p class="email">barbash.elizaveta@yandex.ru</p>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+        jQuery(document).ready(function () {
+        });
+    </script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="../../Project/Бургер меню/js/burger-js.js"></script>
+</body>
+</html>
